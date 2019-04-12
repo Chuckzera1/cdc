@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import {Link} from 'react-router-dom'
 import Author from './Author'
 import './../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './navBar.css'
@@ -16,7 +17,7 @@ export default (props) => {
           <Nav className="mr-auto">
             <NavDropdown title="Menu" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Livros</NavDropdown.Item>
-              <NavDropdown.Item href="Author.jsx">Autores</NavDropdown.Item>
+              <NavDropdown.Item><Link className="fa fa-home"  to = "/">Autores</Link></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Created By</NavDropdown.Item>
             </NavDropdown>
           </Nav>

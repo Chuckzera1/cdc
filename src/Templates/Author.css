@@ -3,6 +3,11 @@
 }
 
 .table{
-    width: 30vw
+    width: 30vw;
 }
+
+.main{
+    justify-content: center;
+}
+
 
