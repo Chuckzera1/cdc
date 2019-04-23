@@ -1,0 +1,23 @@
+{
+  "author": [
+    {
+      "id": 1,
+      "nome": "Joao Rizzo",
+      "email": "joao@gmail.com",
+      "password": "123joao"
+    },
+    {
+      "nome": "asdfasdf",
+      "email": "asdfsadf1@s",
+      "senha": "asdf",
+      "id": 2
+    }
+  ],
+  "book":[
+    {
+      "titulo": "qqwe",
+      "preco": "23.50",
+      "autor":{"id": "1", "nome": "Joao Rizzo", "email":"joao@gmail.com"}
+    }
+  ]
+}

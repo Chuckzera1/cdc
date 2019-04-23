@@ -2,8 +2,7 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import {Link} from 'react-router-dom'
-import Author from './Author'
+//import Author from './Author'
 import './../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './navBar.css'
 
@@ -11,14 +10,14 @@ export default (props) => {
   return (
 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Biblioteca</Navbar.Brand>
+        <Navbar.Brand href="/">Biblioteca</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <NavDropdown title="Menu" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Livros</NavDropdown.Item>
-              <NavDropdown.Item><Link className="fa fa-home"  to = "/">Autores</Link></NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Created By</NavDropdown.Item>
+              <NavDropdown.Item href="/"> Home</NavDropdown.Item>
+              <NavDropdown.Item href="/autor"> Autores </NavDropdown.Item>
+              <NavDropdown.Item href="/"> Livros </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
